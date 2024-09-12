@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="switch-wrapper">
+                <input type="checkbox" id="switch" />
+                <label for="switch" class="switch-label"></label>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="neon-title">Cool Card Generator</h1>
+
+        <form id="generateForm">
+            <input type="text" id="bin" placeholder="BIN (6 digits min)" required>
+            <select id="month">
+                <option value="">Random Month</option>
+            </select>
+            <select id="year">
+                <option value="">Random Year</option>
+            </select>
+            <input type="text" id="cvv" placeholder="CVV (Optional)">
+            <select id="quantity">
+                <option value="50">50 Cards</option>
+                <option value="100">100 Cards</option>
+                <option value="200">200 Cards</option>
+                <option value="500">500 Cards</option>
+                <option value="1000">1000 Cards</option>
+            </select>
+            <button type="submit">Generate</button>
+        </form>
+
+        <div id="output" class="output-box"></div>
+        <button id="copyButton" class="copy-btn">Copy Cards</button>
+
+        <footer>
+            <p>© 2024 Cool Card Generator. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
